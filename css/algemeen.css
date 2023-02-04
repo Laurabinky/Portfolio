@@ -1,0 +1,68 @@
+*, *::after, *::before {
+    box-sizing:border-box;  
+  }
+  button, summary {
+      cursor: pointer;
+  }
+  html{
+    scroll-behavior: smooth;
+  }
+
+     /*********************/
+  /* CUSTOM PROPERTIES */
+  /*********************/
+  :root {
+    /* kleurenpallet*/
+      /*tekst*/
+    --color-text:#000;
+
+    /* background */
+    --background-color-normal: #fff8f9;
+    --background-color-header: lavenderblush;
+    --background-buttons: #228B22;
+    --background-accent:#AFE1AF;
+
+    /* overig */
+    --border-style-color:#AFE1AF;
+  }
+
+  body{
+    background-color: var(--background-color-normal);
+    font-family: 'Quicksand', sans-serif;
+  }
+
+  img{
+    max-width: 100%;
+  }
+
+  /* Header styling + nav */
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    height: 5em;
+    padding: 2em;
+  
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: var(--background-color-header);
+  }
+  
+  header nav a{
+    /* border-style: solid; */
+    background-color: var(--background-buttons);
+    width: 3em;
+    margin-right: .5em;
+    gap: 5em;
+  
+    color: var(--color-text);
+    text-decoration: none;
+    padding: .5em;
+  }
+  
+  header nav a:hover{
+    border-style:dotted ;
+    border-color: var(--border-style-color);
+  }
+  

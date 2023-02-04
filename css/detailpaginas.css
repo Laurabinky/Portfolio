@@ -1,0 +1,14 @@
+/* Styling voor pagina promotiemateriaal gemeenteraad */
+#gemeenteraad section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+}
+#gemeenteraad section img:nth-of-type(3){
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+#gemeenteraad section img:nth-of-type(6){
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
