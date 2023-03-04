@@ -52,7 +52,7 @@ header{
   header nav a{
     /* border-style: solid; */
     background-color: var(--background-buttons);
-    width: 3em;
+    width: 6em;
     margin-right: .5em;
     gap: 5em;
   
