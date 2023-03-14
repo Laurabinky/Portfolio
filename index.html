@@ -19,20 +19,32 @@
     
 </head>
 <body>
-    <header>
-		<nav>
-            <a href="./">Home</a>
-            <a href="./">Projects</a>
-            <a href="./">About me</a>
-            <a href="./">Contact</a>
+    <a href="#navOverslaan">Navigatie overslaan</a>
+    <header id="naarTop">
+        <h1>            
+            <a href="#naarTop"class=a"logo"><img src="" alt="Logo Laura's portfolio"></a>
+        </h1>
+        <button area-label="Menu button">
+            <img src="img/menuknop.png" alt="Menu button">
+        </button>
+        <nav>
+            <button area-label="Sluit button">
+                <img src="img/kruisje-bg.png" alt="Sluit button">
+            </button>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about-me">About me</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </nav>
     </header>
-    <main>
+    <main id="navOverslaan">    
         <section><!--Section 1 voor styling-->
             <img src="img/header.jpg" alt="Header image">
             <h1>Hi! Ik ben Laura, student Communication & Multimedia design.</h1>
         </section>
-        <h1>Projects</h1>
+        <h1 id="Projects">Projects</h1>
         <p>Dit zijn een aantal projecten die ik gedaan heb.</p>
         <section><!--Section 2 voor styling-->
             <div>
@@ -43,7 +55,7 @@
             </div>
                 <img src="img/hollandskroon-abc.jpg" alt="ABC van de gemeenteraad">
         </section>
-        <section>
+        <section><!--Section 3 voor styling-->
             <div>
             <h2>Boekzoeker</h2><!--Section 3 voor styling-->
             <p>Voor het vak visual interface design (VID) kregen we de opdracht om voor de gemeente Amsterdam een boekzoeker te ontwerpen. Hierbij waren de volgende voorwaarden van belang:
@@ -59,16 +71,27 @@
             <img src="img/vid-schermen1.jpg" alt="Boekzoeker homepage">
         </section>
 
-        <h1>About me</h1>   
-        <p>Hi, mijn naam is Laura Peer. Ik ben 21 jaar oud en woon in Julianadorp. Op dit moment volg ik de opleiding
-            Communication & Multimedia design op de Hogeschool van Amsterdam. Ik zit in het tweede jaar van de opleiding.
-        </p> 
-        <p>
-            In mijn vrije tijd wandel ik graag en in de zomer periode ben ik vaak op het strand te vinden.
-        </p>
-        <p>Daarnaast rij ik paard </p>
+        <section id="about-me"><!--Section 4 voor styling-->
+            <div>   
+                <h1>About me </h1>  
+                <p>Hi, mijn naam is Laura Peer. Ik ben 21 jaar oud en woon in Julianadorp. Op dit moment volg ik de opleiding
+                    Communication & Multimedia design op de Hogeschool van Amsterdam. Ik zit in het tweede jaar van de opleiding.
+                </p> 
+                <p>
+                    In mijn vrije tijd wandel ik graag en in de zomer periode ben ik vaak op het strand te vinden. Lekker uitwaaien en wandelen in de natuur geeft een heerlijk vrij gevoel. Ik maak ook
+                    graag foto's tijdens het wandelen, zodat ik later kan terugzien hoe iets er rond een bepaalde tijd in het jaar bijstond.
+                </p>
+                <p>Daarnaast rij ik paard, dit doe ik eens per week. Dit vind ik heerlijk om te doen.</p>
+            </div>
+            <figure>
+                <img src="img/ikres.jpg" alt="Een foto van mij">
+                <img src="img/ik.JPG" alt="Een foto van mij">
+                <img src="img/denzel.jpg" alt="Een foto van mij met Denzel">
+            </figure>
+            
+        </section>
 
-        <h1>Contact</h1>
+        <h1 id="contact">Contact</h1>
         <p>Neem gerust contact met mij op als je vragen hebt!</p>
 
     </main>

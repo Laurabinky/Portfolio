@@ -1,9 +1,9 @@
-*, *::after, *::before {
+/* *, *::after, *::before {
     box-sizing:border-box;  
-  }
-  button, summary {
+  } */
+  /* button, summary {
       cursor: pointer;
-  }
+  } */
   html{
     scroll-behavior: smooth;
   }
@@ -17,8 +17,8 @@
     --color-text:#000;
 
     /* background */
-    --background-color-normal: #fff8f9;
-    --background-color-header: lavenderblush;
+    --background-color-normal: #ffffff;
+    --background-color-header: #fff8f9;
     --background-buttons: #228B22;
     --background-accent:#AFE1AF;
 
@@ -27,42 +27,124 @@
   }
 
   body{
+    width: 100%;
     background-color: var(--background-color-normal);
     font-family: 'Quicksand', sans-serif;
+    color: var(--color-text);
+  }
+  h2, h3, h4, p{
+    font-size: large;
+    line-height: 1.4em;
+  }
+
+  /*Skiplink*/
+  body > a{
+    display:block;
+    width: fit-content;
+    margin: 1em;
+    margin-top: var(--margin-altijd-0);
+    padding: .5em;
+    font-size: small;
+
+    background-color: var(--color-header);
   }
 
   img{
     max-width: 100%;
   }
 
-  /* Header styling + nav */
-header{
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-    height: 5em;
-    padding: 2em;
+/* Menu */
   
+  /* Stijling voor de navigatie */
+  header{
+    display: flex;
+    height: 5em;
+    padding:1em;
+    align-items: center;
+    gap:1em;
+
     position: sticky;
     top: 0;
     z-index: 999;
     background-color: var(--background-color-header);
-  }
-  
-  header nav a{
-    /* border-style: solid; */
-    background-color: var(--background-buttons);
-    width: 6em;
-    margin-right: .5em;
-    gap: 5em;
-  
+}
+
+/* Logo */
+header h1 a{
+    padding: 0 0.15em;
+}
+header h1 a img{
+    width: 1.2em;
+}
+
+/* menu */
+header > button{
+    border: none;
+    background: none;
+    width: 3.2em;
+    order:-1;
+}
+
+header > button img{
+    width: 100%;
+}
+
+/* Navigatie */
+/*Het zichtbaar en onzichtbaar maken van het menu*/
+header > nav{
+    display: grid;
+    grid-template-columns: 1fr 2em;
+    align-items: center;
+    position: relative;
+    position: fixed;
+    inset: 0;
+    background-color: var(--background-color-header);
+    z-index: var(--z-idex);
+
+    transform: translateX(-100%);
+    transition-duration: .2s;
+}
+
+header nav.openen{
+    transform: translateX(-10%);
+}
+
+header nav > button{
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 10%;
+    background-color: var(--color-background);
+    border: none;
+}
+
+header nav > button img{
+    width: 100%;
+}
+
+header nav > ul{
+    overflow-y:auto;
+}
+
+header nav > ul li{
+    margin-top: .5em;
+    margin-bottom: 2em;
+}
+header nav > ul li a{
+    margin-left: 2em;
     color: var(--color-text);
     text-decoration: none;
-    padding: .5em;
-  }
-  
-  header nav a:hover{
-    border-style:dotted ;
-    border-color: var(--border-style-color);
-  }
-  
+    font-size: large;
+    margin-left: 7em;
+    border-bottom: .1em solid var(--background-accent);
+
+}
+
+
+
+/*Stijling voor de main algemeen*/
+main{
+  padding: 2em;
+}
+
