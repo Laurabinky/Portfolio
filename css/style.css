@@ -93,7 +93,6 @@ main section:nth-of-type(4) figure{
 
 main section:nth-of-type(4) figure img{
   /* width: 80%; */
-  /* height: 60%; */
     list-style: none;
     position: relative;
     display: flex;
