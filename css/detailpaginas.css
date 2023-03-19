@@ -2,6 +2,7 @@
 #gemeenteraad h2{
     border-top: solid;
     border-color: var(--border-style-color);
+    margin-top: 2em;
 }
 
 #gemeenteraad section:nth-of-type(1){
@@ -23,6 +24,7 @@
 #gemeenteraad section:nth-of-type(2) img{
     max-width: 30em;
 }
+
 
 /* Styling voor pagina boekzoeker */
 #boekzoeker h2{

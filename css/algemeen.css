@@ -15,15 +15,42 @@
     /* kleurenpallet*/
       /*tekst*/
     --color-text:#000;
+    --color-h2-h3:#228B22;
+    --text-black: #000;
+
 
     /* background */
     --background-color-normal: #ffffff;
     --background-color-header: #fff8f9;
     --background-buttons: #228B22;
     --background-accent:#AFE1AF;
+    --background-footer: #fff8f9;
+    --background-color-white: #ffffff;
 
     /* overig */
     --border-style-color:#AFE1AF;
+  }
+
+  @media(prefers-color-scheme: dark){
+    :root{
+       /* kleurenpallet*/
+      /*tekst*/
+    --color-text:#fff;
+    --color-h2-h3:#228B22;
+    --text-black: #000;
+
+    /* background */
+    --background-color-normal: #000;
+    --background-color-header: #131313;
+    --background-buttons: #228B22;
+    --background-accent:#AFE1AF;
+    --background-footer: #131313;
+    --background-color-white: #ffffff;
+
+
+    /* overig */
+    --border-style-color:#AFE1AF;
+    }
   }
 
   body{
@@ -32,9 +59,14 @@
     font-family: 'Quicksand', sans-serif;
     color: var(--color-text);
   }
+
   h2, h3, h4, p{
     font-size: large;
     line-height: 1.4em;
+  }
+
+  h2, h3{
+    color: var(--color-h2-h3);
   }
 
   /*Skiplink*/
@@ -70,9 +102,20 @@
 }
 
 /* Logo */
+header{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
 header h1 a{
     padding: 0 0.15em;
-}
+    text-decoration: none;
+    color: var(--background-buttons);
+  }
+
 header h1 a img{
     width: 1.2em;
 }
@@ -117,6 +160,7 @@ header nav > button{
     width: 10%;
     background-color: var(--color-background);
     border: none;
+    background-color: var(--background-color-white);
 }
 
 header nav > button img{
@@ -141,10 +185,12 @@ header nav > ul li a{
 
 }
 
-
-
 /*Stijling voor de main algemeen*/
 main{
   padding: 2em;
 }
 
+footer{
+  background-color: var(--background-footer);
+  font-size: .5em;
+}

@@ -3,6 +3,7 @@ main section:nth-of-type(1) {
 	display: flex;
 	flex-direction: column;
 	position:relative;
+  margin-top: 3em;
 }
 
 main section:nth-of-type(1)  h1 {
@@ -10,7 +11,8 @@ main section:nth-of-type(1)  h1 {
 		text-align: left;
 		position: absolute;
     background-color: var(--background-accent);
-    /* background-image: linear-gradient(transparent, #AFE1AF); */
+    color: var(--text-black);
+
 
 		bottom: .5em;
 		right: 5em;
@@ -23,6 +25,7 @@ main section:nth-of-type(1)  h1 {
 main section:nth-of-type(2){
   display: grid;
   grid-template-columns: 1fr 1fr;
+  margin-top: 3em;
 }
 
 main section:nth-of-type(2) div{
@@ -50,6 +53,7 @@ main section:nth-of-type(2) a:hover{
 main section:nth-of-type(3){
   display: grid;
   grid-template-columns: 1fr 1fr;
+  margin-top: 3em;
 }
 
 main section:nth-of-type(3) div{
@@ -82,22 +86,144 @@ main section:nth-of-type(4){
 
 main section:nth-of-type(4) div{
   margin-right: .5em;
+  color: var(--text-black);
 }
 
-main section:nth-of-type(4) figure{
+/* Slider */
+figure{
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 40px;
+  margin-inline-end: 40px;
+}
+.slider{
+    position: relative;
+    width: 50%;
+    overflow: hidden;
+    align-items: center;
+    margin-top: 2em;
+    margin-left: 5em;
+}
+.image{
+    display: flex;
+    width: 100%;
+}
+.image img{
+    transition: all 0.15s ease;
+}
+.image input{
+    display: none;
+}
+
+main section:nth-of-type(4) figure:nth-of-type(2){
+  margin-right: 8em;
+}
+.dots{
+    display: flex;
+    justify-content: center;
+    margin: 1em;
+}
+.dots label{
+    height: 1em;
+    width: 1em;
+    border-radius: 1em;
+    border: solid #fff .2em;
+    cursor: pointer;
+    transition: all 0.20s ease;
+    margin: .5em;
+}
+.dots label:focus{
+    background: var(--background-color-white);
+    background-color: #ffffff;
+}
+.dots label:active{
+    background: var(--background-color-white);
+}
+
+#img1:checked ~ .m1{
+  margin-left: 0;
+}
+#img2:checked ~ .m2{
+  margin-left: -100%;
+}
+#img3:checked ~ .m3{
+  margin-left: -200%;
+}
+
+/* main section:nth-of-type(4) figure{
   display: flex;
   overflow-x: auto;
   padding: 0;
   gap: 1em;
-}
+} */
 
-main section:nth-of-type(4) figure img{
+/* main section:nth-of-type(4) figure img{
   /* width: 80%; */
-    list-style: none;
+    /* list-style: none;
     position: relative;
     display: flex;
     flex-direction: column;
     width:calc(60% - 6em);
-    flex-shrink:0;
-  
+    flex-shrink:0; */
+/* } */ */
+
+/* Plaatjes op elkaar transition */
+/* #slider{
+  position: relative;
+  height: 4em;
+  max-width: 4em; 
+  margin: 0 auto;
+}
+
+#slider img{
+  position: absolute;
+  right: 10em;
+  max-width: 13em;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+@keyframes sideInOut{
+  0%{
+    opacity: 1;
+  }
+  22%{
+    opacity: 1;    
+  }
+  83%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+#slider img.top{
+  animation-name: slideInOut;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 10s;
+  animation-direction: alternate;
+}
+
+#slider img:nth-of-type(1) {
+  animation-delay: 4s;
+}
+#slider img:nth-of-type(2) {
+  animation-delay: 2s;
+}
+#slider img:nth-of-type(3) {
+  animation-delay: 0;
+} */
+
+
+main section:nth-of-type(5){
+  margin-top: 3em;
+}
+
+main section:nth-of-type(5) h3{
+  padding-top: 2em;
 }

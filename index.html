@@ -22,7 +22,7 @@
     <a href="#navOverslaan">Navigatie overslaan</a>
     <header id="naarTop">
         <h1>            
-            <a href="#naarTop"class=a"logo"><img src="" alt="Logo Laura's portfolio"></a>
+            <a href="#naarTop"class=a"logo">Laura</a>
         </h1>
         <button area-label="Menu button">
             <img src="img/menuknop.png" alt="Menu button">
@@ -83,20 +83,40 @@
                 </p>
                 <p>Daarnaast rij ik paard, dit doe ik eens per week. Dit vind ik heerlijk om te doen.</p>
             </div>
-            <figure>
-                <img src="img/ikres.jpg" alt="Een foto van mij">
-                <img src="img/ik.JPG" alt="Een foto van mij">
-                <img src="img/denzel.jpg" alt="Een foto van mij met Denzel">
-            </figure>
-            
+            <div>
+                <figure class="slider">
+                    <div class="image">
+                        <input type="radio" name="slide" id="img1" checked>
+                        <input type="radio" name="slide" id="img2">
+                        <input type="radio" name="slide" id="img3">
+        
+                        <img src="./img/ik.jpg" class="m1" alt="img1">
+                        <img src="./img/ikres.jpg" class="m2" alt="img2">
+                        <img src="./img/denzel.jpg" class="m3" alt="img3">
+                    </div>
+                </figure>
+                <figure class="dots">
+                    <label for="img1"></label>
+                    <label for="img2"></label>
+                    <label for="img3"></label>
+                </figure>
+            </div>     
         </section>
 
-        <h1 id="contact">Contact</h1>
-        <p>Neem gerust contact met mij op als je vragen hebt!</p>
-
+        <section>
+            <h1 id="contact">Contact</h1> <!--5e section voor styling-->
+            <p>Neem gerust contact met mij op als je vragen hebt!</p>
+            <h3>Adresgegevens</h3>
+            <p>Kruiszwin 5418</p>
+            <p>1788 RV</p>
+            <p>Julianadorp</p>
+            <h3>Contactgegevens</h3>
+            <p>Email: Laurapeer40@gmail.com</p>
+            <p>Telefoon: 06 25152026</p>
+        </section>
     </main>
     <footer>
-        <p>@laura Peer 2023</p>
+        <p>Design by Laura Peer</p>
     </footer>
     <script defer src="js/script.js"></script>
 </body>
