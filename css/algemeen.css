@@ -71,13 +71,13 @@
 
   /*Skiplink*/
   body > a{
-    display:block;
+    display:none;
     width: fit-content;
     margin: 1em;
     margin-top: var(--margin-altijd-0);
     padding: .5em;
     font-size: small;
-
+    
     background-color: var(--color-header);
   }
 
