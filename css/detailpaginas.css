@@ -47,3 +47,26 @@
 #boekzoeker section:nth-of-type(2) img{
     max-width: 30em;
 }
+
+
+/* Styling voor pagina H&M website */
+#HM h2{
+    border-top: solid;
+    border-color: var(--border-style-color);
+}
+
+#HM section:nth-of-type(1){
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+}
+
+/* Styling afbeeldingen */
+#HM section:nth-of-type(2){
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+}
+#HM section:nth-of-type(2) img{
+    max-width: 30em;
+}
