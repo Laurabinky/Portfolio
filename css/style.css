@@ -151,6 +151,7 @@ main section:nth-of-type(4) figure:nth-of-type(2){
     display: flex;
     justify-content: center;
     margin: 1em;
+    padding-right: 7em;
 }
 .dots label{
     height: 1em;

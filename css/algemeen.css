@@ -87,7 +87,7 @@
 
 /* Menu */
   
-  /* Stijling voor de navigatie */
+  /* Algemene stijling */
   header{
     display: flex;
     height: 5em;
@@ -109,16 +109,14 @@ header{
   padding-left: 2em;
   padding-right: 2em;
 }
-
 header h1 a{
     padding: 0 0.15em;
     text-decoration: none;
     color: var(--background-buttons);
   }
-
-header h1 a img{
-    width: 1.2em;
-}
+  header h1 a img{
+    width: 5em;
+  }
 
 /* menu */
 header > button{
@@ -127,7 +125,6 @@ header > button{
     width: 3.2em;
     order:-1;
 }
-
 header > button img{
     width: 100%;
 }
@@ -157,10 +154,9 @@ header nav > button{
     right: 0;
     top: 0;
     bottom: 0;
-    width: 10%;
-    background-color: var(--color-background);
+    width: 5em;
     border: none;
-    background-color: var(--background-color-white);
+    background-color: var(--background-color-header);
 }
 
 header nav > button img{
@@ -193,4 +189,10 @@ main{
 footer{
   background-color: var(--background-footer);
   font-size: .5em;
+}
+
+@media (min-width:50em) {
+  section{
+    grid-template-columns: 1fr;
+  }
 }
